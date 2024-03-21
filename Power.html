@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <h1>جدول توان عدد اول در عدد دوم</h1>
+    <button onclick="myfun()">کلیک کنید</button>
+</body>
+</html>
+<script>
+    function myfun() {
+        var Number1 = prompt("Enter First Number");
+        var Number2 = prompt("Enter Second Number");
+
+        var FinalReasult = 1;
+
+        for (var i = 0; i < Number2; i++) {
+            FinalReasult = FinalReasult * Number1;
+        }
+        alert(FinalReasult);
+    }
+</script>

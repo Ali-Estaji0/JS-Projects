@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var birthday = prompt("سال تاریخ تولد را وارد نمایید:");
+
+    if (birthday == null) {
+        alert("وارد کردن سال تولد اجباری میباشد");
+        var birthday = prompt("سال تاریخ تولد را وارد نمایید:");
+        var userage = 1402 - birthday;
+        alert("UR AGE IS: " + userage);
+    } else {
+        var userage = 1402 - birthday;
+        alert("UR AGE IS: " + userage);
+    }
+</script>
+
+</html>

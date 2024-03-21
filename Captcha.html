@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.Main-But{
+    align-items: center;
+    justify-content: center;
+    margin-left: 800px;
+    margin-top: 300px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+</style>
+
+<body>
+    <button onclick="myfun()" class="Main-But">کد کپچا</button>
+</body>
+<script>
+    function myfun() {
+
+        var RandomText = " ";
+        var randomChars = "0123456789QWERTYUIOPLKJHGFDSAZXCVBNM";
+        for (var i = 0; i < 6; i++) {
+            var RanNumber = Math.floor(Math.random() * randomChars.length);
+            RandomText = RandomText + randomChars[RanNumber]
+        }
+        alert("Your Captcha Code : " + RandomText);
+    }
+</script>
+
+</html>
